@@ -1,0 +1,22 @@
+.logo-brand{
+    width: 100px;
+    margin-left: 3%;
+    filter: drop-shadow(0 0.25rem 0.25rem rgba(0, 0, 0, 0.5));
+}
+.navbar{
+    background-color: #E0BE5F;
+}
+.logo-brand:hover{
+    scale: 1.1;
+    animation-delay: 1s;
+    
+}
+.button-contact{
+    background-color:  #393834;
+    color: white;
+    padding: 15px 32px;
+}
+.button-contact:hover{
+ background-color: #E0BE5F;
+
+}
