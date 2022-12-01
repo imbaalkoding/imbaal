@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit,HostListener } from '@angular/core';
 
 @Component({
   selector: 'app-homepage',
@@ -28,4 +28,16 @@ export class HomepageComponent implements OnInit {
     }
     console.log(this.overlaypage)
   }
+
+  @HostListener('window:resize',['$event'])
+  onWindowResize(){
+  }
+  
+isMobileMenu(){
+  if (window.innerWidth<991){
+    return true
+  }else{
+    return false
+  }
+}
 }

@@ -9,8 +9,7 @@ import { FooterComponent } from './component/footer/footer.component';
 import { HomepageComponent } from './component/homepage/homepage.component';
 import {MatIconModule} from'@angular/material/icon';
 import { OurservisComponent } from './component/ourservis/ourservis.component';
-import { WebComponent } from './component/navbar/web/web.component';
-import { MobileComponent } from './component/navbar/mobile/mobile.component';
+
 @NgModule({
   declarations: [
     AppComponent,
@@ -19,8 +18,6 @@ import { MobileComponent } from './component/navbar/mobile/mobile.component';
     FooterComponent,
     HomepageComponent,
     OurservisComponent,
-    WebComponent,
-    MobileComponent,
 
   ],
   imports: [
