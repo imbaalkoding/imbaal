@@ -8,7 +8,9 @@ import { NavbarComponent } from './component/navbar/navbar.component';
 import { FooterComponent } from './component/footer/footer.component';
 import { HomepageComponent } from './component/homepage/homepage.component';
 import {MatIconModule} from'@angular/material/icon';
-import { OurservisComponent } from './component/ourservis/ourservis.component'
+import { OurservisComponent } from './component/ourservis/ourservis.component';
+import { WebComponent } from './component/navbar/web/web.component';
+import { MobileComponent } from './component/navbar/mobile/mobile.component';
 @NgModule({
   declarations: [
     AppComponent,
@@ -16,7 +18,10 @@ import { OurservisComponent } from './component/ourservis/ourservis.component'
     NavbarComponent,
     FooterComponent,
     HomepageComponent,
-    OurservisComponent
+    OurservisComponent,
+    WebComponent,
+    MobileComponent,
+
   ],
   imports: [
     BrowserModule,
