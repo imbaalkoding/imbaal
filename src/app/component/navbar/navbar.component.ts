@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit,HostListener } from '@angular/core';
 
 @Component({
   selector: 'app-navbar',
@@ -11,5 +11,15 @@ export class NavbarComponent implements OnInit {
 
   ngOnInit(): void {
   }
+  @HostListener('window:resize',['$event'])
+  onWindowResize(){
+  }
 
+isMobileMenu(){
+    if (window.innerWidth<991){
+      return true
+    }else{
+      return false
+    }
+  }
 }
