@@ -16,7 +16,7 @@ export class NavbarComponent implements OnInit {
   }
 
 isMobileMenu(){
-    if (window.innerWidth<991){
+    if (window.innerWidth<700){
       return true
     }else{
       return false

@@ -2,34 +2,69 @@
 
 <div *ngIf="isMobileMenu()">
     <div class="homepage-mobile">
-        <div class="footage">
+        <div class="footage" >
             
             <a class="slide_prev-mobile"  (click)="homepageSlide('sebelum')" title="Prev"></a>
             <a class="slide_next-mobile"  (click)="homepageSlide('berikut')" title="Next"></a> 
             <div class="homepage-content-mobile">
                 <div class="container-slide1" >
-                    <p>aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa</p>
+                    <p>Rafa bor berdiri sejak tahun 2017 bergerak di bidang pengeboran bor pile, pengeboran sumur air tanah dalam mesin jetpump, submersible atau satelit, melayani proyek perumahan dan pribadi</p>
                     <div class="slide1">
                         <img src="../../../assets/pngegg.png" alt="">
                     </div>
                 </div>
                 <div class="slide2">
-                    <img src="../../../assets/pngwing.com (2).png" alt="">
+                    <!-- <img src="../../../assets/pngwing.com (2).png"  style ="opacity: 1;" alt=""> -->
                 </div>
             </div>
         </div>
         <div>
-                <mat-expansion-panel (opened)="panelOpenState = true"
-                            (closed)="panelOpenState = false">
+                <mat-expansion-panel (opened)="panelOpenState = true" (closed)="panelOpenState = false">
                     <mat-expansion-panel-header>
                     <mat-panel-title>
-                        Self aware panel
+                        Dokumentasi
                     </mat-panel-title>
-                    <mat-panel-description>
-                        Currently I am {{panelOpenState ? 'open' : 'closed'}}
-                    </mat-panel-description>
+                    <mat-icon>photo_camera</mat-icon>
                     </mat-expansion-panel-header>
-                    <p>I'm visible because I am open</p>
+                    <div class="row row-cols-1 row-cols-md-3 g-4">
+                        <div class="col">
+                            <div class="card h-100">
+                                <img src="..." class="card-img-top" alt="...">
+                                <div class="card-body">
+                                    <h5 class="card-title">Card title</h5>
+                                    <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col">
+                            <div class="card h-100">
+                                <img src="..." class="card-img-top" alt="...">
+                                <div class="card-body">
+                                    <h5 class="card-title">Card title</h5>
+                                    <p class="card-text">This is a short card.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col">
+                            <div class="card h-100">
+                                <img src="..." class="card-img-top" alt="...">
+                                <div class="card-body">
+                                    <h5 class="card-title">Card title</h5>
+                                    <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col">
+                            <div class="card h-100">
+                                <img src="..." class="card-img-top" alt="...">
+                                <div class="card-body">
+                                    <h5 class="card-title">Card title</h5>
+                                    <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
                 </mat-expansion-panel>
         </div>
     </div>

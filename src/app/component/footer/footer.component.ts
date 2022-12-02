@@ -16,7 +16,7 @@ export class FooterComponent implements OnInit {
   }
 
 isMobileMenu(){
-    if (window.innerWidth<991){
+    if (window.innerWidth<700){
       return true
     }else{
       return false
@@ -27,7 +27,7 @@ isMobileMenu(){
     if(target=='phone'){
       window.open('https://wa.me/+62811111111')
     }else if (target== 'location'){
-      window.open('https://www.google.com/maps/place/Kebun+Raya+Bogor/@-6.5976289,106.7973811,17z/data=!3m1!4b1!4m5!3m4!1s0x2e69c5c412a67abb:0x75f23c6b45a37ee5!8m2!3d-6.5976289!4d106.7995698')
+      window.open('https://www.google.com/maps/place/Jl.+Kp.+Pabuaran,+Jagabita,+Kec.+Parung+Panjang,+Kabupaten+Bogor,+Jawa+Barat+16360/@-6.3338842,106.537327,55m/data=!3m1!1e3!4m5!3m4!1s0x2e4208240a8d1ed7:0xb6c57b593ea5852f!8m2!3d-6.3336699!4d106.5335337')
     }else if (target=='mail'){
       window.open('https://mail.google.com/mail/u/0/')
     }
