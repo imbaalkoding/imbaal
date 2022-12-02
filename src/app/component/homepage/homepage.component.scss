@@ -9,7 +9,8 @@
     z-index: 1;
 }
 .footage{
-    width: 100%
+    width: 100%;
+    background-image: url('../../../assets/sumur-bor.jpg');
 }
 .slide__prev,
 .slide__next {
@@ -42,15 +43,48 @@
     // position: absolute;
     // z-index: 2;
   }
-.homepage-content{
+.homepage-content, .homepage-content-mobile{
   display: flex;
   overflow-x: scroll;
-  position: relative;
   scroll-behavior: smooth;
   scroll-snap-type: x mandatory;
-  z-index: 3;
 }
 
 .homepage-mobile{
-  background-image: url('../../../assets/sumur-bor.jpg');
+ 
 }
+.slide_prev-mobile,
+.slide_next-mobile {
+    position: absolute;
+    top: 10%;
+    width: 35px;
+    height: 35px;
+    border: solid rgb(255, 255, 255);
+    border-width: 0 4px 4px 0;
+    padding: 3px;
+    box-sizing: border-box;
+  }
+  .slide_prev-mobile,
+  .slider::before {
+    transform: rotate(135deg);
+    -webkit-transform: rotate(135deg);
+    left: 5%;
+  }
+  
+  .slide_next-mobile,
+  .slider::after {
+    transform: rotate(-45deg);
+    -webkit-transform: rotate(-45deg);
+    right: 5%;
+  }
+
+  .slide1,.slide2{
+    position: absolute;
+    width: 50px;
+    top: 20%;
+  }
+  .container-slide1{
+    position: relative;
+    height: 450px;
+  }
+  

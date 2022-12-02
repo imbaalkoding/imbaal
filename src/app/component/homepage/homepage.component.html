@@ -3,13 +3,38 @@
 <div *ngIf="isMobileMenu()">
     <div class="homepage-mobile">
         <div class="footage">
-            <img src="../../../assets/team_img5.jpg" alt="">
-            <a class="slide__prev"  (click)="homepageSlide('sebelum')" title="Prev"></a>
-            <a class="slide__next"  (click)="homepageSlide('berikut')" title="Next"></a> 
+            
+            <a class="slide_prev-mobile"  (click)="homepageSlide('sebelum')" title="Prev"></a>
+            <a class="slide_next-mobile"  (click)="homepageSlide('berikut')" title="Next"></a> 
+            <div class="homepage-content-mobile">
+                <div class="container-slide1" >
+                    <p>aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa</p>
+                    <div class="slide1">
+                        <img src="../../../assets/pngegg.png" alt="">
+                    </div>
+                </div>
+                <div class="slide2">
+                    <img src="../../../assets/pngwing.com (2).png" alt="">
+                </div>
+            </div>
+        </div>
+        <div>
+                <mat-expansion-panel (opened)="panelOpenState = true"
+                            (closed)="panelOpenState = false">
+                    <mat-expansion-panel-header>
+                    <mat-panel-title>
+                        Self aware panel
+                    </mat-panel-title>
+                    <mat-panel-description>
+                        Currently I am {{panelOpenState ? 'open' : 'closed'}}
+                    </mat-panel-description>
+                    </mat-expansion-panel-header>
+                    <p>I'm visible because I am open</p>
+                </mat-expansion-panel>
         </div>
     </div>
-
 </div>
+
 <div *ngIf="!isMobileMenu()">
     <div class="footage">
         <img  class="background-foto" src="../../../assets/sumur-bor.jpg" alt="">

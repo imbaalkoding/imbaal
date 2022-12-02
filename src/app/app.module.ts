@@ -9,6 +9,8 @@ import { FooterComponent } from './component/footer/footer.component';
 import { HomepageComponent } from './component/homepage/homepage.component';
 import {MatIconModule} from'@angular/material/icon';
 import { OurservisComponent } from './component/ourservis/ourservis.component';
+import {MatExpansionModule} from '@angular/material/expansion';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
 @NgModule({
   declarations: [
@@ -23,7 +25,9 @@ import { OurservisComponent } from './component/ourservis/ourservis.component';
   imports: [
     BrowserModule,
     AppRoutingModule,
-    MatIconModule
+    MatIconModule,
+    MatExpansionModule,
+    BrowserAnimationsModule
   ],
   providers: [],
   bootstrap: [AppComponent]

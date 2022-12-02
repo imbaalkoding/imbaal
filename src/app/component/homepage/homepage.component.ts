@@ -1,4 +1,5 @@
-import { Component, OnInit,HostListener } from '@angular/core';
+import { Component, OnInit,HostListener, ViewChild } from '@angular/core';
+import {MatAccordion} from '@angular/material/expansion';
 
 @Component({
   selector: 'app-homepage',
@@ -7,6 +8,7 @@ import { Component, OnInit,HostListener } from '@angular/core';
 })
 export class HomepageComponent implements OnInit {
   overlaypage=0
+  panelOpenState = false;
   constructor() { }
   ngOnInit(): void {
     this.overlaypage =0
