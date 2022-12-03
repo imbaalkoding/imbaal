@@ -11,6 +11,7 @@ import {MatIconModule} from'@angular/material/icon';
 import { OurservisComponent } from './component/ourservis/ourservis.component';
 import {MatExpansionModule} from '@angular/material/expansion';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import {NgbCarouselModule}from'@ng-bootstrap/ng-bootstrap'
 
 @NgModule({
   declarations: [
@@ -27,7 +28,8 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
     AppRoutingModule,
     MatIconModule,
     MatExpansionModule,
-    BrowserAnimationsModule
+    BrowserAnimationsModule,
+    NgbCarouselModule
   ],
   providers: [],
   bootstrap: [AppComponent]

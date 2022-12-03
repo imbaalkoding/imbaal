@@ -2,7 +2,37 @@
 
 <div *ngIf="isMobileMenu()">
     <div class="homepage-mobile">
-        <div class="footage" >
+        <ngb-carousel *ngIf="images">
+            <ng-template ngbSlide>
+                <div class="picsum-img-wrapper ">
+                    <img [src]="images[0]" alt="Random first slide" class="img-footage" />
+                </div>
+                <div class="carousel-caption">
+                    <h3>First slide label</h3>
+                    <p>Nulla vitae elit libero, a pharetra augue mollis interdum.</p>
+                </div>
+            </ng-template>
+            <ng-template ngbSlide>
+                <div class="picsum-img-wrapper">
+                    <img [src]="images[1]" alt="Random second slide" class="img-footage"/>
+                    <div class="topright">Top Right</div>
+                </div>
+                <div class="carousel-caption">
+                    <h3>Second slide label</h3>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                </div>
+            </ng-template>
+            <ng-template ngbSlide>
+                <div class="picsum-img-wrapper">
+                    <img [src]="images[2]" alt="Random third slide" class="img-footage"/>
+                </div>
+                <div class="carousel-caption">
+                    <h3>Third slide label</h3>
+                    <p>Praesent commodo cursus magna, vel scelerisque nisl consectetur.</p>
+                </div>
+            </ng-template>
+        </ngb-carousel>
+        <!-- <div class="footage" >
             
             <a class="slide_prev-mobile"  (click)="homepageSlide('sebelum')" title="Prev"></a>
             <a class="slide_next-mobile"  (click)="homepageSlide('berikut')" title="Next"></a> 
@@ -14,10 +44,10 @@
                     </div>
                 </div>
                 <div class="slide2">
-                    <!-- <img src="../../../assets/pngwing.com (2).png"  style ="opacity: 1;" alt=""> -->
+                    <img src="../../../assets/pngwing.com (2).png"  style ="opacity: 1;" alt=""> 
                 </div>
             </div>
-        </div>
+        </div> -->
         <div>
                 <mat-expansion-panel (opened)="panelOpenState = true" (closed)="panelOpenState = false">
                     <mat-expansion-panel-header>
@@ -71,24 +101,34 @@
 </div>
 
 <div *ngIf="!isMobileMenu()">
-    <div class="footage">
-        <img  class="background-foto" src="../../../assets/sumur-bor.jpg" alt="">
-        <a class="slide__prev"  (click)="homepageSlide('sebelum')" title="Prev"></a>
-        <a class="slide__next"  (click)="homepageSlide('berikut')"title="Next"></a>
-        <div class="homepage-content">
-            <div  class="overlay-homepage" >
-                <img src="../../../assets/logo.png" alt="">
-                
+    <ngb-carousel *ngIf="images">
+        <ng-template ngbSlide>
+            <div class="picsum-img-wrapper ">
+                <img [src]="images[0]" alt="Random first slide" class="img-footage" />
             </div>
-            <div  class="overlay-homepage" >
-                <img src="../../../assets/sumur-bor.jpg" alt="">
+            <div class="carousel-caption">
+                <h3>First slide label</h3>
+                <p>Nulla vitae elit libero, a pharetra augue mollis interdum.</p>
             </div>
-            <div href="#slides__3" class="overlay-homepage" >
-                <img src="../../../assets/team_img5.jpg" alt="">
+        </ng-template>
+        <ng-template ngbSlide>
+            <div class="picsum-img-wrapper">
+                <img [src]="images[1]" alt="Random second slide" class="img-footage"/>
+                <div class="topright">Top Right</div>
             </div>
-            <div  class="overlay-homepage" >
-                <img src="../../../assets/team_img7.jpg" alt="">
+            <div class="carousel-caption">
+                <h3>Second slide label</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
             </div>
-        </div>
-    </div>
+        </ng-template>
+        <ng-template ngbSlide>
+            <div class="picsum-img-wrapper">
+                <img [src]="images[2]" alt="Random third slide" class="img-footage"/>
+            </div>
+            <div class="carousel-caption">
+                <h3>Third slide label</h3>
+                <p>Praesent commodo cursus magna, vel scelerisque nisl consectetur.</p>
+            </div>
+        </ng-template>
+    </ngb-carousel>
 </div>

@@ -11,6 +11,10 @@
 .footage{
     width: 100%;
     background-image: url('../../../assets/sumur-bor.jpg');
+    &::after{
+      background-color: rgba(88, 11, 11, 0.95);
+    }
+    
     
 }
 .slide__prev,
@@ -95,4 +99,16 @@
   .mat-expansion-panel{
    padding: 10px;
    box-shadow: inset 0 0 5px #000000;
+  }
+
+  .img-footage{
+    width: 100%;
+  }
+
+  .topright {
+    position: absolute;
+    top: 20%;
+    left: 5%;
+    font-size: 18px;
+    color: rgb(255, 255, 255);
   }

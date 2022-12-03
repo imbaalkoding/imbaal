@@ -6,17 +6,16 @@ import { Component, OnInit,HostListener } from '@angular/core';
   styleUrls: ['./dashboard.component.scss']
 })
 export class DashboardComponent implements OnInit {
+ 
 
   constructor() { }
-
+ 
   ngOnInit(): void {
-     
-    
   }
 
   @HostListener('window:resize',['$event'])
   onWindowResize(){
-    
+    console.log(window.innerWidth)
   }
 
   isMobileMenu(){
@@ -26,5 +25,5 @@ export class DashboardComponent implements OnInit {
       return false
     }
   }
-
+  
 }
