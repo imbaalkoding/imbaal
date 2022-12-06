@@ -1,27 +1,19 @@
-import { Component, OnInit,HostListener } from '@angular/core';
+import { Component, OnInit,Input } from '@angular/core';
 
 @Component({
-  selector: 'app-footer',
+  selector: 'footer',
   templateUrl: './footer.component.html',
   styleUrls: ['./footer.component.scss']
 })
 export class FooterComponent implements OnInit {
-
+@Input ('iniHp')
+  public isMobile :any
   constructor() { }
 
   ngOnInit(): void {
   }
-  @HostListener('window:resize',['$event'])
-  onWindowResize(){
-  }
 
-isMobileMenu(){
-    if (window.innerWidth<700){
-      return true
-    }else{
-      return false
-    }
-  }
+
 
   sosmed(target:string){
     if(target=='phone'){

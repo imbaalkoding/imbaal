@@ -1,14 +1,15 @@
 
-<div *ngIf="!isMobileMenu()">
+<div *ngIf="!isMobile">
     <nav class="navbar navbar-dark">
         <img src="../../../assets/logo.png" class ="logo-brand" alt="">
-        <a class="btn button-contact" href="#kontak">Hubungi Kami</a>
+        <div class="button_slide slide_right">Hubungi Kami </div>
+        
     </nav>
 
 </div>
-<div *ngIf="isMobileMenu()">
+<div *ngIf="isMobile">
     <nav class="navbar navbar-dark">
         <img src="../../../assets/logo.png" class ="logo-mobile" alt="">
-        <a class="btn button-contact-web" href="#kontak">Hubungi Kami</a>
+        <a class="btn button-contact-mobile" href="#kontak">Hubungi Kami</a>
     </nav>
 </div>

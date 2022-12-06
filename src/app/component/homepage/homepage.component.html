@@ -1,19 +1,19 @@
 
 
-<div *ngIf="isMobileMenu()">
+<div *ngIf="isMobile">
     <div class="homepage-mobile">
         <ngb-carousel *ngIf="images">
             <ng-template ngbSlide>
-                <div class="picsum-img-wrapper ">
-                    <img [src]="images[0]" alt="Random first slide" class="img-footage" />
+                <div class=" fade-in-ngbcor" >
+                    <img [src]="images[0]" alt="Random first slide" class="img-footage " />
                 </div>
-                <div class="carousel-caption">
-                    <h3>First slide label</h3>
+                <div class="carousel-caption ">
+                    <h3 >First slide label</h3>
                     <p>Nulla vitae elit libero, a pharetra augue mollis interdum.</p>
                 </div>
             </ng-template>
             <ng-template ngbSlide>
-                <div class="picsum-img-wrapper">
+                <div class=" fade-in-ngbcor">
                     <img [src]="images[1]" alt="Random second slide" class="img-footage"/>
                     <div class="topright">Top Right</div>
                 </div>
@@ -23,7 +23,7 @@
                 </div>
             </ng-template>
             <ng-template ngbSlide>
-                <div class="picsum-img-wrapper">
+                <div class=" fade-in-ngbcor">
                     <img [src]="images[2]" alt="Random third slide" class="img-footage"/>
                 </div>
                 <div class="carousel-caption">
@@ -32,75 +32,58 @@
                 </div>
             </ng-template>
         </ngb-carousel>
-        <!-- <div class="footage" >
-            
-            <a class="slide_prev-mobile"  (click)="homepageSlide('sebelum')" title="Prev"></a>
-            <a class="slide_next-mobile"  (click)="homepageSlide('berikut')" title="Next"></a> 
-            <div class="homepage-content-mobile">
-                <div class="container-slide1" >
-                    <p>Rafa bor berdiri sejak tahun 2017 bergerak di bidang pengeboran bor pile, pengeboran sumur air tanah dalam mesin jetpump, submersible atau satelit, melayani proyek perumahan dan pribadi</p>
-                    <div class="slide1">
-                        <img src="../../../assets/pngegg.png" alt="">
-                    </div>
-                </div>
-                <div class="slide2">
-                    <img src="../../../assets/pngwing.com (2).png"  style ="opacity: 1;" alt=""> 
-                </div>
-            </div>
-        </div> -->
         <div>
-                <mat-expansion-panel (opened)="panelOpenState = true" (closed)="panelOpenState = false">
-                    <mat-expansion-panel-header>
-                    <mat-panel-title>
-                        Dokumentasi
-                    </mat-panel-title>
-                    <mat-icon>photo_camera</mat-icon>
-                    </mat-expansion-panel-header>
-                    <div class="row row-cols-1 row-cols-md-3 g-4">
-                        <div class="col">
-                            <div class="card h-100">
-                                <img src="..." class="card-img-top" alt="...">
-                                <div class="card-body">
-                                    <h5 class="card-title">Card title</h5>
-                                    <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col">
-                            <div class="card h-100">
-                                <img src="..." class="card-img-top" alt="...">
-                                <div class="card-body">
-                                    <h5 class="card-title">Card title</h5>
-                                    <p class="card-text">This is a short card.</p>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col">
-                            <div class="card h-100">
-                                <img src="..." class="card-img-top" alt="...">
-                                <div class="card-body">
-                                    <h5 class="card-title">Card title</h5>
-                                    <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content.</p>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col">
-                            <div class="card h-100">
-                                <img src="..." class="card-img-top" alt="...">
-                                <div class="card-body">
-                                    <h5 class="card-title">Card title</h5>
-                                    <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-                                </div>
+            <mat-expansion-panel (opened)="panelOpenState = true" (closed)="panelOpenState = false">
+                <mat-expansion-panel-header>
+                <mat-panel-title>
+                    Dokumentasi
+                </mat-panel-title>
+                <mat-icon>photo_camera</mat-icon>
+                </mat-expansion-panel-header>
+                <div class="row row-cols-1 row-cols-md-3 g-4">
+                    <div class="col">
+                        <div class="card h-100">
+                            <img src="..." class="card-img-top" alt="...">
+                            <div class="card-body">
+                                <h5 class="card-title">Card title</h5>
+                                <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
                             </div>
                         </div>
                     </div>
-
-                </mat-expansion-panel>
+                    <div class="col">
+                        <div class="card h-100">
+                            <img src="..." class="card-img-top" alt="...">
+                            <div class="card-body">
+                                <h5 class="card-title">Card title</h5>
+                                <p class="card-text">This is a short card.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="card h-100">
+                            <img src="..." class="card-img-top" alt="...">
+                            <div class="card-body">
+                                <h5 class="card-title">Card title</h5>
+                                <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="card h-100">
+                            <img src="..." class="card-img-top" alt="...">
+                            <div class="card-body">
+                                <h5 class="card-title">Card title</h5>
+                                <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </mat-expansion-panel>
         </div>
     </div>
 </div>
 
-<div *ngIf="!isMobileMenu()">
+<div *ngIf="!isMobile">
     <ngb-carousel *ngIf="images">
         <ng-template ngbSlide>
             <div class="picsum-img-wrapper ">

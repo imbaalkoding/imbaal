@@ -1,4 +1,4 @@
-import { Component, OnInit,HostListener } from '@angular/core';
+import { Component, OnInit,HostListener, Output, EventEmitter, Input } from '@angular/core';
 
 @Component({
   selector: 'app-dashboard',
@@ -7,19 +7,18 @@ import { Component, OnInit,HostListener } from '@angular/core';
 })
 export class DashboardComponent implements OnInit {
  
-
+  // @Output() lebarJendela = new EventEmitter<any>();
   constructor() { }
- 
+ lebarJendela =0
   ngOnInit(): void {
   }
 
   @HostListener('window:resize',['$event'])
   onWindowResize(){
-    console.log(window.innerWidth)
   }
 
   isMobileMenu(){
-    if (window.innerWidth<700){
+    if (window.innerWidth<900){
       return true
     }else{
       return false
