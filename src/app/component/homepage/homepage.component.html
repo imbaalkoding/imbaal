@@ -2,10 +2,10 @@
 
 <div *ngIf="isMobile">
     <div class="homepage-mobile">
-        <ngb-carousel *ngIf="images">
+        <ngb-carousel >
             <ng-template ngbSlide>
                 <div class=" fade-in-ngbcor" >
-                    <img [src]="images[0]" alt="Random first slide" class="img-footage " />
+                    <img src="assets/frame1" alt="Random first slide" class="img-footage " />
                 </div>
                 <div class="carousel-caption ">
                     <h3 >First slide label</h3>
@@ -14,7 +14,7 @@
             </ng-template>
             <ng-template ngbSlide>
                 <div class=" fade-in-ngbcor">
-                    <img [src]="images[1]" alt="Random second slide" class="img-footage"/>
+                    <img src="assets/frame2" alt="Random second slide" class="img-footage"/>
                     <div class="topright">Top Right</div>
                 </div>
                 <div class="carousel-caption">
@@ -24,7 +24,7 @@
             </ng-template>
             <ng-template ngbSlide>
                 <div class=" fade-in-ngbcor">
-                    <img [src]="images[2]" alt="Random third slide" class="img-footage"/>
+                    <img src="assets/frame3" alt="Random third slide" class="img-footage"/>
                 </div>
                 <div class="carousel-caption">
                     <h3>Third slide label</h3>
@@ -84,34 +84,29 @@
 </div>
 
 <div *ngIf="!isMobile">
-    <ngb-carousel *ngIf="images">
+    <ngb-carousel >
         <ng-template ngbSlide>
             <div class="picsum-img-wrapper ">
-                <img [src]="images[0]" alt="Random first slide" class="img-footage" />
+                <img src="../../../assets/frame1.jpg" alt="Random first slide" class="img-footage" />
             </div>
-            <div class="carousel-caption">
-                <h3>First slide label</h3>
-                <p>Nulla vitae elit libero, a pharetra augue mollis interdum.</p>
+            
+        </ng-template>
+        <ng-template ngbSlide>
+            <div class="picsum-img-wrapper">
+                <img src="../../../assets/frame2.jpg" alt="Random second slide" class="img-footage"/>
             </div>
         </ng-template>
         <ng-template ngbSlide>
             <div class="picsum-img-wrapper">
-                <img [src]="images[1]" alt="Random second slide" class="img-footage"/>
-                <div class="topright">Top Right</div>
+                <div style="position:relative">
+                    <img src="../../../assets/frame3.jpg" alt="Random third slide" class="img-footage" />
+                    <div class="maps-footage" >
+                        <iframe  frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="https://maps.google.com/maps?width=100%25&amp;height=1000&amp;hl=en&amp;q=-6.333821,%20106.537355+(Rafa%20sumur%20bor)&amp;t=&amp;z=14&amp;ie=UTF8&amp;iwloc=B&amp;output=embed">
+                        </iframe>
+                    </div>
+                </div>
             </div>
-            <div class="carousel-caption">
-                <h3>Second slide label</h3>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-            </div>
-        </ng-template>
-        <ng-template ngbSlide>
-            <div class="picsum-img-wrapper">
-                <img [src]="images[2]" alt="Random third slide" class="img-footage"/>
-            </div>
-            <div class="carousel-caption">
-                <h3>Third slide label</h3>
-                <p>Praesent commodo cursus magna, vel scelerisque nisl consectetur.</p>
-            </div>
+            
         </ng-template>
     </ngb-carousel>
 </div>

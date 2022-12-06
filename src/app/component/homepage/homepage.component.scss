@@ -103,6 +103,7 @@
 
   .img-footage{
     width: 100%;
+
   }
 
   .topright {
@@ -127,5 +128,15 @@
     }
     100% {
       opacity: 1;
+    }
+  }
+  .maps-footage{
+    position:absolute; 
+    top: 20%;
+    right:15% ;
+    iframe{
+      width: 120%;
+      height: 300px;
+      border-radius: 10px;
     }
   }
