@@ -2,44 +2,44 @@
 
 </div>
 <div *ngIf = "!isMobile">
-  <div class="row">
-    <div class="col-3 keterangan">
+  <div class="row" style="margin-top: 2%;">
+    <div class="col-4 keterangan">
         Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.
     </div>
-    <div class="col-9">
-        <div class="slider-container">
-            <div class="slider">
-              <div class="slides">
-                <div id="slides__1" class="slide">
-                  <span><img src="../../../assets/logo.png" alt=""></span>
-                  <!-- <span class="slide__text">1</span> -->
-                  <a class="slide__prev" href="#slides__4" title="Next"></a>
-                  <a class="slide__next" href="#slides__2" title="Next"></a>
-                </div>
-                <div id="slides__2" class="slide">
-                  <span class="slide__text">2</span>
-                  <a class="slide__prev" href="#slides__1" title="Prev"></a>
-                  <a class="slide__next" href="#slides__3" title="Next"></a>
-                </div>
-                <div id="slides__3" class="slide">
-                  <span class="slide__text">3</span>
-                  <a class="slide__prev" href="#slides__2" title="Prev"></a>
-                  <a class="slide__next" href="#slides__4" title="Next"></a>
-                </div>
-                <div id="slides__4" class="slide">
-                  <span class="slide__text">4</span>
-                  <a class="slide__prev" href="#slides__3" title="Prev"></a>
-                  <a class="slide__next" href="#slides__1" title="Prev"></a>
-                </div>
+    <div class="col-8">
+      <ngb-carousel
+      *ngIf="images"
+    >
+      <ng-template ngbSlide *ngFor="let image of images">
+        <div class="picsum-img-wrapper">
+          <div class="row row-cols-1 row-cols-md-3 g-4">
+            <div class="col">
+              <div class="card " style="margin-bottom: 0px;">
+                  <div class="container-our">
+                    <img src="../../../assets/frame1.jpg" class="service-img" alt="...">
+                    <div class="overlay">
+                      <div class="text">Hello World</div>
+                    </div>
+
+
+                  </div>
               </div>
-              <div class="slider__nav">
-                <a class="slider__navlink" href="#slides__1"></a>
-                <a class="slider__navlink" href="#slides__2"></a>
-                <a class="slider__navlink" href="#slides__3"></a>
-                <a class="slider__navlink" href="#slides__4"></a>
+            </div>
+            <div class="col">
+              <div class="card " style="margin-bottom: 0px;">
+                  <img src="../../../assets/frame1.jpg" class="service-img" alt="...">
+              </div>
+            </div>
+            <div class="col">
+              <div class="card " style="margin-bottom: 0px;">
+                  <img src="../../../assets/frame1.jpg" class="service-img" alt="...">
               </div>
             </div>
           </div>
-    </div>
-</div>
+        </div>  
+      </ng-template>
+    </ngb-carousel>
+    
+    <hr />
+  </div>
 </div>

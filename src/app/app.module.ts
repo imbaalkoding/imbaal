@@ -7,11 +7,11 @@ import { DashboardComponent } from './component/dashboard/dashboard.component';
 import { NavbarComponent } from './component/navbar/navbar.component';
 import { FooterComponent } from './component/footer/footer.component';
 import { HomepageComponent } from './component/homepage/homepage.component';
-import {MatIconModule} from'@angular/material/icon';
+import { MatIconModule} from'@angular/material/icon';
 import { OurservisComponent } from './component/ourservis/ourservis.component';
-import {MatExpansionModule} from '@angular/material/expansion';
+import { MatExpansionModule} from '@angular/material/expansion';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
-import {NgbCarouselModule}from'@ng-bootstrap/ng-bootstrap'
+import { NgbCarouselModule, NgbCarouselConfig}from'@ng-bootstrap/ng-bootstrap'
 
 @NgModule({
   declarations: [
@@ -31,7 +31,7 @@ import {NgbCarouselModule}from'@ng-bootstrap/ng-bootstrap'
     BrowserAnimationsModule,
     NgbCarouselModule
   ],
-  providers: [],
+  providers: [NgbCarouselConfig],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
