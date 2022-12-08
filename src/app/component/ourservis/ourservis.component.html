@@ -2,14 +2,66 @@
 
 </div>
 <div *ngIf = "!isMobile">
+  <div class="section-content" style="padding-bottom:1% ;">
+    <div class="row ">
+      <div class="col-4 align-self-center">
+        <div class="m-b30">
+          <h2 class="m-b20 m-t0">Proses Pengerjaan Proyek</h2>
+          <div class="separator bg-primary w5"></div>
+          <p class="m-b10"></p>
+          <a href="" class="site-button m-r10">  </a>
+          <a href="" class="site-button"></a>
+        </div>
+      </div>
+      <div class="col-4 ">
+        <img class="img-full" src="" alt="">
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-4" >
+        <div class="box-number">
+            <div class="number">1</div>
+            <h3>Konsultasi</h3>
+            <p>Jangan khawatir untuk bertanya, semua solusi selalu kami berikan kepada para pelanggan. Berbagai permasalahan pengeboran selalu menjadi tantangan unik untuk kami selesaikan dengan baik.</p>
+        </div>
+      </div>
+      <div class="col-4">
+        <div class="box-number">
+            <div class="number">2</div>
+            <h3>Survey</h3>
+            <p>Setelah diskusi, tim kamii siap melakukan inspeksi lapangan atau survey jika dibutuhkan. Melalui survey ini kami bisa memberikan harga terbaik dan paling masuk akal dibanding lainnya.</p>
+        </div>
+      </div>
+      <div class="col-4">
+        <div class="box-number">
+            <div class="number">3</div>
+            <h3>Eksekusi &amp; Report</h3>
+            <p>Setelah dealing, kami mempersiapkan tim dan peralatan menuju proyek. Sebagai profesional, kami juga memiliki quality control khusus &amp; siap memberikan report hasil pengerjaan.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="dokumentasi">
+    <mat-expansion-panel>
+      <mat-expansion-panel-header>
+        <mat-panel-title>
+          Dokumentasi
+        </mat-panel-title>
+        <mat-panel-description>
+          ayam
+        </mat-panel-description>
+        <mat-icon>insert_photo</mat-icon>
+      </mat-expansion-panel-header>  
+    </mat-expansion-panel>
+  </div>
+
   <div class="row" >
     <div class="col-4 keterangan">
         Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.
     </div>
     <div class="col-8">
-      <ngb-carousel
-      *ngIf="images"
-    >
+      <ngb-carousel *ngIf="images">
       <ng-template ngbSlide *ngFor="let image of images">
         <div class="picsum-img-wrapper">
           <div class="row row-cols-1 row-cols-md-3 g-4">
@@ -50,42 +102,29 @@
   </div>
 </div>
 
-<div class="section-content">
-  <div class="row ">
-    <div class="col-4 align-self-center">
-      <div class="m-b30">
-        <h2 class="m-b20 m-t0">Proses Pengerjaan Proyek</h2>
-        <div class="separator bg-primary w5"></div>
-        <p class="m-b10"></p>
-        <a href="" class="site-button m-r10">  </a>
-        <a href="" class="site-button"></a>
-      </div>
-    </div>
-    <div class="col-4 ">
-      <img class="img-full" src="" alt="">
-    </div>
+
+<div class="hubungi-banner"  >
+  <div class="hubungi">
+      hubungi
+  </div>
+  <div class="rafa-sumur-bor">
+      RAFA SUMUR BOR SEGERA!
   </div>
   <div class="row">
-    <div class="col-lg-4 col-md-4 col-sm-6 col-12 m-b30">
-      <div class="box-number">
-          <div class="number">1</div>
-          <h3>Konsultasi</h3>
-          <p>Jangan khawatir untuk bertanya, semua solusi selalu kami berikan kepada para pelanggan. Berbagai permasalahan pengeboran selalu menjadi tantangan unik untuk kami selesaikan dengan baik.</p>
+      <div class="col-4" style="display:flex; justify-content: center;">
+          <div class="banner">
+              Alat Lengkap
+          </div>
       </div>
-    </div>
-    <div class="col-lg-4 col-md-4 col-sm-6 col-12 m-b30">
-      <div class="box-number">
-          <div class="number">2</div>
-          <h3>Survey</h3>
-          <p>Setelah diskusi, tim kamii siap melakukan inspeksi lapangan atau survey jika dibutuhkan. Melalui survey ini kami bisa memberikan harga terbaik dan paling masuk akal dibanding lainnya.</p>
+      <div class="col-4" style="display:flex; justify-content: center;">
+          <div class="banner">
+              Siap Melayani
+          </div>
       </div>
-    </div>
-    <div class="col-lg-4 col-md-4 col-sm-6 col-12 m-b30">
-      <div class="box-number">
-          <div class="number">3</div>
-          <h3>Eksekusi &amp; Report</h3>
-          <p>Setelah dealing, kami mempersiapkan tim dan peralatan menuju proyek. Sebagai profesional, kami juga memiliki quality control khusus &amp; siap memberikan report hasil pengerjaan.</p>
+      <div class="col-4" style="display:flex; justify-content: center;">
+          <div class="banner">
+              Mutu Terjamin
+          </div>
       </div>
-    </div>
   </div>
 </div>
