@@ -5,13 +5,15 @@
     padding: 2%;
 }
 .servis-kami{
- display: flex;
- color: antiquewhite;
- text-align: center;
- align-items: center; 
-}
-.servis-kami{
     display: flex;
+    color: antiquewhite;
+    text-align: center;
+    align-items: center; 
+    margin-bottom: 5px;
+}
+
+.servis-kami:hover{
+    transform:scale(1.1) rotate(2deg);
 }
 
 .header-foot{
@@ -23,8 +25,15 @@
 }
 .servis-foto{
     width: 70px;
+    height: 70px;
     border-radius: 10px;
 }
 .servis-text{
     align-items: center;
+}
+
+.provinsi ,.alamat-lengkap {
+    color: white;
+    text-align: justify;
+    text-justify: inter-word;
 }
