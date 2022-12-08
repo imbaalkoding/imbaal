@@ -83,7 +83,7 @@
     </div>
     <div class="col-8">
       <ngb-carousel >
-      <ng-template ngbSlide >
+      <ng-template ngbSlide *ngFor ="let img of images" >
         <div class="picsum-img-wrapper">
           <div class="row row-cols-1 row-cols-md-3 g-4">
             <div class="col">

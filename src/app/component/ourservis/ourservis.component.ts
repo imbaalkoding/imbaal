@@ -1,4 +1,4 @@
-import { Component, OnInit,Input, AfterViewInit, ViewChild, ElementRef} from '@angular/core';
+import { Component, OnInit,Input} from '@angular/core';
 import { NgbCarouselConfig } from '@ng-bootstrap/ng-bootstrap';
 
 

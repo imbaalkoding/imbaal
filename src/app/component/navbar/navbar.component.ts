@@ -11,6 +11,8 @@ export class NavbarComponent implements OnInit {
 
   ngOnInit(): void {
   }
-
+kontaks(){
+  window.location.assign('#kontak')
+}
 
 }
