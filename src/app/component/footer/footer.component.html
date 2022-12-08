@@ -2,7 +2,7 @@
 
 <div *ngIf ="isMobile">
     <div class="kontak" id ="kontak">
-        <img src="../../../assets/logo.png" style="width: 100px ;" alt="">
+        <img src="../../../assets/logo-footer.png" style="width: 100px ;" alt="">
         <div class="d-flex " style="justify-content: center; color: beige;">
             <div (click)="sosmed('phone')"  >    
                 <mat-icon > phone</mat-icon>
@@ -23,14 +23,33 @@
 </div>
 <div *ngIf ="!isMobile">
     <div class="kontak row" id ="kontak">
-        <div class="col-4">
-            <img src="../../../assets/logo.png" style="width: 150px ;" alt="">
+        <div class="col-3" >
+            <img src="../../../assets/logo-footer.png" style="width: 250px ;" alt="">
         </div>
-        <div class="col-4">
-            Servis Kami 
-            <a href="" >ayam</a> 
+        <div class="col-3">
+            <div class="header-foot">
+                Hubungi Kami
+            </div>
+            <div class="provinsi">
+                Jawa Barat
+            </div>
+            <div class="alamat-lengkap">
+                
+            </div>
         </div>
-        <div class="col-4 ">
+        <div class="col-3">
+            <div class="header-foot">
+                Usaha Kami
+            </div>
+            <div class="servis-kami">
+                <img src="../../../assets/bata-ringan.png" class="servis-foto" alt="">
+                <div class="servis-text"> bata ringan</div>
+            </div>
+            <div class="servis-kami">
+                
+            </div>
+        </div>
+        <div class="col-3">
             <div class ="sosmed">
                 <mat-icon> location_on</mat-icon>
                 <span>

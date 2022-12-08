@@ -4,7 +4,9 @@
     filter: drop-shadow(0 0.25rem 0.25rem rgba(0, 0, 0, 0.5));
 }
 .navbar{
-    background-color: #E0BE5F;
+    // background-color: #E0BE5F;
+    background-image: linear-gradient(#E0BE5F, #dbb54d);
+    box-shadow: 0 8px 6px -6px black;
 }
 .logo-brand:hover{
     scale: 1.1;

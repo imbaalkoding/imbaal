@@ -1,9 +1,30 @@
 .kontak{
     align-items: initial;
-    text-align: center;
     background-color: #444141;
-
+    min-height: 200px;
+    padding: 2%;
 }
-.sosmed{
- color: antiquewhite;   
+.servis-kami{
+ display: flex;
+ color: antiquewhite;
+ text-align: center;
+ align-items: center; 
+}
+.servis-kami{
+    display: flex;
+}
+
+.header-foot{
+    color: white;
+    margin-bottom: 15px;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 20px;
+    font-weight: 400;
+}
+.servis-foto{
+    width: 70px;
+    border-radius: 10px;
+}
+.servis-text{
+    align-items: center;
 }
