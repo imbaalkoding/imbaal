@@ -10,20 +10,18 @@ import { NgbCarouselConfig } from '@ng-bootstrap/ng-bootstrap';
 })
 export class OurservisComponent implements OnInit{
 @Input('iniHp')
-public isMobile:any
+public isMobile:any;
+panelOpenState =false
 showNavigationArrows = true;
 showNavigationIndicators = false;
-images = [1055, 194, 368].map((n) => `https://picsum.photos/id/${n}/900/500`);
+images = [1,2,3,4,5,6,7].map((n) => `../../../assets/bor${n}.jpeg `);
   constructor(config: NgbCarouselConfig) {
     config.showNavigationArrows = true;
     config.showNavigationIndicators = false;
    }
   
-
-
-
-  ngOnInit(): void { 
-    
+  ngOnInit(): void {
+    console.log(this.images[1]) 
   }
 
 

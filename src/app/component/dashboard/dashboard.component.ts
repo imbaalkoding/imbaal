@@ -24,5 +24,9 @@ export class DashboardComponent implements OnInit {
       return false
     }
   }
+  wa(){
+    console.log('1')
+    window.open('https://wa.me/+6281282606922') 
+  }
   
 }

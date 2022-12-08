@@ -43,16 +43,37 @@
   </div>
 
   <div class="dokumentasi">
-    <mat-expansion-panel>
+    <mat-expansion-panel (opened)="panelOpenState = true"
+                         (closed)="panelOpenState = false" >
       <mat-expansion-panel-header>
         <mat-panel-title>
-          Dokumentasi
+          <div class="expand-title">
+            Dokumentasi Proyek
+          </div>
         </mat-panel-title>
-        <mat-panel-description>
-          ayam
-        </mat-panel-description>
         <mat-icon>insert_photo</mat-icon>
       </mat-expansion-panel-header>  
+      <div *ngIf="panelOpenState" class="isi-expand">
+        <div class="row row-cols-1 row-cols-md-3 g-4" >
+          <div class="col" *ngFor ="let img of images index as i">
+              <div class="card h-100">
+                  <img [src]="img" class="card-img-top" alt="...">
+              </div>
+            </div>
+            <div class="col">
+              <video width="100%"  autoplay controls muted loop >
+                <source src="../../../assets/dok/pemboran.mp4" type="video/mp4">
+              Your browser does not support the video tag.
+              </video>
+            </div>
+            <div class="col">
+              <video width="100%"  autoplay muted loop >
+                <source src="../../../assets/dok/air-keluar.mp4" type="video/mp4">
+              Your browser does not support the video tag.
+              </video>
+            </div>
+        </div>  
+      </div>
     </mat-expansion-panel>
   </div>
 
@@ -61,8 +82,8 @@
         Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.
     </div>
     <div class="col-8">
-      <ngb-carousel *ngIf="images">
-      <ng-template ngbSlide *ngFor="let image of images">
+      <ngb-carousel >
+      <ng-template ngbSlide >
         <div class="picsum-img-wrapper">
           <div class="row row-cols-1 row-cols-md-3 g-4">
             <div class="col">
@@ -103,28 +124,3 @@
 </div>
 
 
-<div class="hubungi-banner"  >
-  <div class="hubungi">
-      hubungi
-  </div>
-  <div class="rafa-sumur-bor">
-      RAFA SUMUR BOR SEGERA!
-  </div>
-  <div class="row">
-      <div class="col-4" style="display:flex; justify-content: center;">
-          <div class="banner">
-              Alat Lengkap
-          </div>
-      </div>
-      <div class="col-4" style="display:flex; justify-content: center;">
-          <div class="banner">
-              Siap Melayani
-          </div>
-      </div>
-      <div class="col-4" style="display:flex; justify-content: center;">
-          <div class="banner">
-              Mutu Terjamin
-          </div>
-      </div>
-  </div>
-</div>
