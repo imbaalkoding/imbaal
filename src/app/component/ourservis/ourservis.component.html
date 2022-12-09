@@ -1,5 +1,71 @@
 <div *ngIf = "isMobile">
-
+  <div class="row ">
+    <div class="col-12 align-self-center">
+      <div class="m-b30" style="text-align: center;">
+        <h2 class="m-b20 m-t0">Proses Pengerjaan Proyek</h2>
+      </div>
+    </div>
+    <div class="col-4 ">
+      <img class="img-full" src="" alt="">
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-12" >
+      <div class="box-number">
+          <div class="number">1</div>
+          <h3>Konsultasi</h3>
+          <p>Jangan khawatir untuk bertanya, semua solusi selalu kami berikan kepada para pelanggan. Berbagai permasalahan pengeboran selalu menjadi tantangan unik untuk kami selesaikan dengan baik.</p>
+      </div>
+    </div>
+    <div class="col-12">
+      <div class="box-number">
+          <div class="number">2</div>
+          <h3>Survey</h3>
+          <p>Setelah diskusi, tim kamii siap melakukan inspeksi lapangan atau survey jika dibutuhkan. Melalui survey ini kami bisa memberikan harga terbaik dan paling masuk akal dibanding lainnya.</p>
+      </div>
+    </div>
+    <div class="col-12">
+      <div class="box-number">
+          <div class="number">3</div>
+          <h3>Eksekusi &amp; Report</h3>
+          <p>Setelah dealing, kami mempersiapkan tim dan peralatan menuju proyek. Sebagai profesional, kami juga memiliki quality control khusus &amp; siap memberikan report hasil pengerjaan.</p>
+      </div>
+    </div>
+  </div>
+  <div class="dokumentasi">
+    <mat-expansion-panel (opened)="panelOpenState = true"
+                         (closed)="panelOpenState = false" >
+      <mat-expansion-panel-header>
+        <mat-panel-title>
+          <div class="expand-title">
+            Dokumentasi Proyek
+          </div>
+        </mat-panel-title>
+        <mat-icon style="font-size: 30px;">insert_photo</mat-icon>
+      </mat-expansion-panel-header>  
+      <div *ngIf="panelOpenState" class="isi-expand">
+        <div class="row row-cols-1 row-cols-md-3 g-4" >
+          <div class="col" *ngFor ="let img of images index as i">
+              <div class="card h-100">
+                  <img [src]="img" class="card-img-top" alt="...">
+              </div>
+            </div>
+            <div class="col">
+              <video width="100%"  autoplay controls muted loop >
+                <source src="../../../assets/dok/pemboran.mp4" type="video/mp4">
+              Your browser does not support the video tag.
+              </video>
+            </div>
+            <div class="col">
+              <video width="100%"  autoplay muted loop >
+                <source src="../../../assets/dok/air-keluar.mp4" type="video/mp4">
+              Your browser does not support the video tag.
+              </video>
+            </div>
+        </div>  
+      </div>
+    </mat-expansion-panel>
+  </div>
 </div>
 <div *ngIf = "!isMobile">
   <div class="section-content" style="padding-bottom:1% ;">
@@ -51,7 +117,7 @@
             Dokumentasi Proyek
           </div>
         </mat-panel-title>
-        <mat-icon>insert_photo</mat-icon>
+        <mat-icon style="font-size: 30px;">insert_photo</mat-icon>
       </mat-expansion-panel-header>  
       <div *ngIf="panelOpenState" class="isi-expand">
         <div class="row row-cols-1 row-cols-md-3 g-4" >
