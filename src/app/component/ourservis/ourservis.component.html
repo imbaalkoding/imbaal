@@ -121,23 +121,19 @@
       </mat-expansion-panel-header>  
       <div *ngIf="panelOpenState" class="isi-expand">
         <div class="row row-cols-1 row-cols-md-3 g-4" >
-          <div class="col" *ngFor ="let img of images index as i">
+          <div class="col" *ngFor ="let img of images">
               <div class="card h-100">
                   <img [src]="img" class="card-img-top" alt="...">
               </div>
-            </div>
-            <div class="col">
-              <video width="100%"  autoplay controls muted loop >
-                <source src="../../../assets/dok/pemboran.mp4" type="video/mp4">
+          </div>
+          <div class="col" *ngFor ="let vdo of videos " >
+            <div class="card " >
+              <video   loop muted autoplay oncanplay="this.play()" onloadedmetadata="this.muted = true" class="card-img-top video-dokumentasi" >
+                <source [src]="vdo" type="video/mp4">
               Your browser does not support the video tag.
               </video>
             </div>
-            <div class="col">
-              <video width="100%"  autoplay muted loop >
-                <source src="../../../assets/dok/air-keluar.mp4" type="video/mp4">
-              Your browser does not support the video tag.
-              </video>
-            </div>
+          </div>
         </div>  
       </div>
     </mat-expansion-panel>

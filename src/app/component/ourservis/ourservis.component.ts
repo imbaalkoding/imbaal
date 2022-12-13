@@ -14,7 +14,8 @@ public isMobile:any;
 panelOpenState =false
 showNavigationArrows = true;
 showNavigationIndicators = false;
-images = [1,2,3,4,5,6,7].map((n) => `../../../assets/bor${n}.jpeg `);
+images = [1,2,3,4,5,6,7].map((n) => `../../../assets/foto/bor${n}.jpg `);
+videos = [1,2,3,4,5,6,7].map((n)=>  `../../../assets/video/bor${n}.mp4`)
   constructor(config: NgbCarouselConfig) {
     config.showNavigationArrows = true;
     config.showNavigationIndicators = false;
@@ -23,7 +24,5 @@ images = [1,2,3,4,5,6,7].map((n) => `../../../assets/bor${n}.jpeg `);
   ngOnInit(): void {
     console.log(this.images[1]) 
   }
-
-
 
 }
