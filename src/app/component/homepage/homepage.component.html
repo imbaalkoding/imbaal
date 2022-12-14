@@ -1,41 +1,62 @@
 
 
 <div *ngIf="isMobile">
-    <div class="homepage-mobile">
-        <ngb-carousel >
-            <ng-template ngbSlide>
-                <div class=" fade-in-ngbcor" >
-                    <img src="../../../assets/frame1.jpg" alt="Random first slide" class="img-footage " />
+    <ngb-carousel style="padding-top: 70px;">
+        <ng-template ngbSlide>
+            <div class="picsum-img-wrapper ">
+                <img src="../../../assets/frame1.jpg" alt="Random first slide" class="img-footage" />
+                <div class="btn11-footage">
+                    <div class="btn11-text mobile">
+                        Tentang Kami
+                    </div>
                 </div>
-                <div class="carousel-caption ">
-                    <h3 >First slide label</h3>
-                    <p>Nulla vitae elit libero, a pharetra augue mollis interdum.</p>
+                <div class="btn21-footage">
+                    <div class="btn21-text mobile">
+                        Rafa bor berdiri sejak tahun 2017 bergerak di bidang pengeboran bor pile, pengeboran sumur air tanah dalam mesin jetpump, submersible atau satelit, melayani proyek perumahan dan pribadi
+                    </div>
                 </div>
-            </ng-template>
-            <ng-template ngbSlide>
-                <div class=" fade-in-ngbcor">
-                    <img src="../../../assets/frame2.jpg" alt="Random second slide" class="img-footage"/>
+            </div>
+            
+        </ng-template>
+        <ng-template ngbSlide>
+            <div class="picsum-img-wrapper">
+                <img src="../../../assets/frame2.jpg" alt="Random second slide" class="img-footage"/>
+                <div class="btn12-footage">
+                    <div class="btn12-text mobile">
+                        Perlengkapan
+                    </div>
                 </div>
-                <div class="carousel-caption">
-                    <h3>Second slide label</h3>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                <div class="btn22-footage">
+                    <div class="btn22-text mobile">
+                        Rafa bor berdiri sejak tahun 2017 bergerak di bidang pengeboran bor pile, pengeboran sumur air tanah dalam mesin jetpump, submersible atau satelit, melayani proyek perumahan dan pribadi
+                    </div>
                 </div>
-            </ng-template>
-            <ng-template ngbSlide>
-                <div class=" fade-in-ngbcor">
-                    <img src="../../../assets/frame3.jpg" alt="Random third slide" class="img-footage"/>
-                    <div class="maps-footage" >
+            </div>
+        </ng-template>
+        <ng-template ngbSlide>
+            <div class="picsum-img-wrapper">
+                <div style="position :relative">
+                    <img src="../../../assets/frame3.jpg" alt="Random third slide" class="img-footage" />
+                    <div class="maps-footage" style="text-align:end;" >
                         <iframe  frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="https://maps.google.com/maps?width=100%25&amp;height=1000&amp;hl=en&amp;q=-6.333821,%20106.537355+(Rafa%20sumur%20bor)&amp;t=&amp;z=14&amp;ie=UTF8&amp;iwloc=B&amp;output=embed">
                         </iframe>
                     </div>
+                    <div class="btn11-footage">
+                        <div class="btn11-text mobile">
+                            Lokasi Kami
+                        </div>
+                    </div>
+                    <div class="btn21-footage mobile">
+                        <div class="btn21-text mobile">
+                            Temukan Kami di
+                            Alamat kp. pabuaran RT 01/04 desa jagabita kec. Parung panjang Bogor Jawa barat
+                        </div>
+                    </div>
                 </div>
-                <div class="carousel-caption">
-                    <h3>Third slide label</h3>
-                    <p>Praesent commodo cursus magna, vel scelerisque nisl consectetur.</p>
-                </div>
-            </ng-template>
-        </ngb-carousel>
-    </div>
+            </div>
+            
+        </ng-template>
+    </ngb-carousel>
 </div>
 
 <div *ngIf="!isMobile">
