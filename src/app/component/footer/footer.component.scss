@@ -89,8 +89,11 @@
   
 }
 
-.provinsi ,.alamat-lengkap {
+.provinsi ,.alamat-lengkap,.provinsi-mobile ,.alamat-lengkap-mobile {
     color: white;
     text-align: justify;
     text-justify: inter-word;
+}
+.provinsi-mobile ,.alamat-lengkap-mobile{
+  font-size: 14px;
 }
