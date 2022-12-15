@@ -10,7 +10,7 @@
         </div>
         <div class="row">
             <div class="col-4" style="display:flex; justify-content: center;">
-                <div class="banner">
+                <div class="banner-mobile">
                     <div class="banner-info-title">
                         Alat Lengkap
                     </div>
@@ -18,7 +18,7 @@
                 </div>
             </div>
             <div class="col-4" style="display:flex; justify-content: center;">
-                <div class="banner">
+                <div class="banner-mobile" style="font-size: 12px;">
                     <div class="banner-info-title">
                         Siap Melayani
                     </div>
@@ -26,7 +26,7 @@
                 </div>
             </div>
             <div class="col-4" style="display:flex; justify-content: center;">
-                <div class="banner">
+                <div class="banner-mobile" style="font-size: 12px;">
                     <div class="banner-info-title">
                         Mutu Terjamin
                     </div>
@@ -35,11 +35,13 @@
             </div>
         </div>
     </div>
-    <div class="kontak row" id ="kontak">
-        <div class="col-3" >
-            <img src="../../../assets/logo-footer.png" style="width: 250px ;" alt="">
+    <div class="kontak" id ="kontak">
+        <div  class="servis-kami">
+            <img src="../../../assets/logo-footer.png" style="width: 100px ;" alt="">
+            <div class="servis-text-mobile"> Rafa bor bergerak di bidang pengeboran bor pile, pengeboran sumur air tanah dalam mesin jetpump, submersible atau satelit
+            </div> 
         </div>
-        <div class="col-3">
+        <div >
             <div class="header-foot">
                 Hubungi Kami
             </div>
@@ -52,24 +54,26 @@
             Nomor Telp/Whatsapp : 081282606922
             </div>
         </div>
-        <div class="col-3">
+        <div >
             <div class="header-foot">
                 Usaha Kami
             </div>
-            <div class="servis-kami">
-                <img src="../../../assets/bata-ringan.png" class="servis-foto" alt="">
+            <div class="row">
+            <div class="servis-kami col-6">
+                <img src="../../../assets/bata-ringan.png" class="servis-foto-mobile" alt="">
                 <div class="servis-text"> Bata Ringan</div>
             </div>
-            <div class="servis-kami">
-                <img src="../../../assets/tanah-merah.jpg"  class="servis-foto" alt="">
+            <div class="servis-kami col-6">
+                <img src="../../../assets/tanah-merah.jpg"  class="servis-foto-mobile" alt="">
                 <div class="servis-text"> Tanah Merah</div>
             </div>
-            <div class="servis-kami">
-                <img src="../../../assets/toko-bangunan.png"  class="servis-foto" alt="">
+            <div class="servis-kami col-6">
+                <img src="../../../assets/toko-bangunan.png"  class="servis-foto-mobile" alt="">
                 <div class="servis-text"> Toko bangunan</div>
             </div>
         </div>
-        <div class="col-3">
+        </div>
+        <!-- <div class="col-3">
             <div class ="sosmed">
                 <mat-icon> location_on</mat-icon>
                 <span>
@@ -86,13 +90,13 @@
                 <a href="">mail@gmail.com</a></span>
             </div>
             
-        </div>
+        </div> -->
     </div>
 
 
 
 
-    <div class="kontak" id ="kontak">
+    <!-- <div class="kontak" id ="kontak">
         <img src="../../../assets/logo-footer.png" style="width: 100px ;" alt="">
         <div class="d-flex " style="justify-content: center; color: beige;">
             <div (click)="sosmed('phone')"  >    
@@ -105,7 +109,7 @@
                 <mat-icon> mail_outline</mat-icon>
             </div>
         </div>
-    </div>
+    </div> -->
 </div>
 
 <div *ngIf ="!isMobile">
