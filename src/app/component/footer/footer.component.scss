@@ -8,17 +8,17 @@
     padding: 5%;
   }
     
-  .banner{
+  .banner ,.banner-mobile{
     background-color: #FFF;
-    width: 70%;
-    min-height: 70px;
     border-radius: 10px;
   }
+  .banner{
+    width: 70%;
+    min-height: 70px;
+  }
   .banner-mobile{
-    background-color: #FFF;
     width: 100%;
     min-height: 40px;
-    border-radius: 10px;
   }
   .banner-info-title{
     font-size: 15px;
@@ -27,14 +27,20 @@
     font-family: Roboto;
     top:1%
   }
-  .rafa-sumur-bor{
+  .rafa-sumur-bor, .rafa-sumur-bor-mobile{
     font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
     color: #FFF;
-    font-size: 27px;
-    line-height: 30px;
     text-shadow: rgb(0 0 0) 0px 1px 1px, rgb(0 0 0) 0px -1px 1px, rgb(0 0 0) 1px 0px 1px, rgb(0 0 0) -1px 0px 1px;
-    margin-bottom: 1%;
-  } 
+    margin-bottom: 4%;
+  }
+  .rafa-sumur-bor{
+    font-size: 50px;
+    line-height: 30px;
+  }
+  .rafa-sumur-bor-mobile{
+    font-size: 21px;
+  }
+
   .hubungi{
     font-family: roboto;
     font-size: 18px;

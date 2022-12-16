@@ -34,8 +34,6 @@
     }
   }
   .btn11-footage {
-    position: absolute;
-    height: 100%;
     top:0%;
     left: 10%;
     opacity: 1;
@@ -43,10 +41,12 @@
     animation-direction: alternate;
     animation-fill-mode: forwards;
   }
+  .btn11-footage, .btn12-footage, .btn21-footage,.btn21-footage-mobile, .btn22-footage,.btn22-footage-mobile .btn13-footage {
+    position: absolute;
+    height:100%;
+  } 
 
   .btn21-footage {
-    position: absolute;
-    height: 100%;
     width: 40%;
     bottom:0%;
     left: 10%;
@@ -56,8 +56,6 @@
     animation-fill-mode: forwards;
   }
   .btn21-footage-mobile {
-    position: absolute;
-    height: 100%;
     width: 55%;
     bottom:0%;
     left: 10%;
@@ -67,8 +65,6 @@
     animation-fill-mode: forwards;
   }
   .btn12-footage {
-    position: absolute;
-    height: 100%;
     top:0%;
     right: 20%;
     opacity: 1;
@@ -77,8 +73,6 @@
     animation-fill-mode: forwards;
   }
   .btn22-footage {
-    position: absolute;
-    height: 100%;
     width: 40%;
     bottom:0%;
     right: 10%;
@@ -88,19 +82,15 @@
     animation-fill-mode: forwards;
   }
   .btn22-footage-mobile {
-    position: absolute;
-    height: 100%;
     width: 55%;
     bottom:0%;
     right: 7%;
     opacity: 1;
-    animation: transisi21-mobile 2s;
+    animation: transisi22-mobile 2s;
     animation-direction: alternate;
     animation-fill-mode: forwards;
   }
   .btn13-footage {
-    position: absolute;
-    height: 100%;
     bottom:0%;
     right: 20%;
     opacity: 1;
@@ -258,6 +248,14 @@
     }
   }
   @keyframes transisi21-mobile{
+    0% {
+      transform: translate(0, 100%);
+    }
+    100% {
+      transform: translate(0, 45% );
+    }
+  }
+  @keyframes transisi22-mobile{
     0% {
       transform: translate(0, 100%);
     }

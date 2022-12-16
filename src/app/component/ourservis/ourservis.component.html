@@ -42,22 +42,22 @@
       </mat-expansion-panel-header>  
       <div *ngIf="panelOpenState" class="isi-expand">
         <div class="row row-cols-1 row-cols-md-3 g-4" >
-          <div class="col" *ngFor ="let img of images index as i">
+          <div class="col" *ngFor ="let data of lokasi index as i">
               <div class="card h-100">
-                  <img [src]="img" class="card-img-top" alt="...">
+                  <img [src]="data.foto" class="card-img-top" alt="...">
+                  <div class="overlay">
+                    <pre style="display: none;">{{ data.tempat }}</pre>
+                    <div class="text" style="white-space: pre-wrap">{{data.tempat}}</div>
+                  </div>
               </div>
             </div>
-            <div class="col">
-              <video width="100%"  autoplay controls muted loop >
-                <source src="../../../assets/dok/pemboran.mp4" type="video/mp4">
-              Your browser does not support the video tag.
-              </video>
-            </div>
-            <div class="col">
-              <video width="100%"  autoplay muted loop >
-                <source src="../../../assets/dok/air-keluar.mp4" type="video/mp4">
-              Your browser does not support the video tag.
-              </video>
+            <div class="col" *ngFor ="let vdo of videos " >
+              <div class="card " >
+                <video loop muted autoplay oncanplay="this.play()" onloadedmetadata="this.muted = true" loading="lazy" class="card-img-top video-dokumentasi" >
+                  <source [src]="vdo" type="video/mp4">
+                Your browser does not support the video tag.
+                </video>
+              </div>
             </div>
         </div>  
       </div>
@@ -113,7 +113,7 @@
         <div class="row row-cols-1 row-cols-md-3 g-4" >
           <div class="col" *ngFor ="let data of lokasi">
               <div class="card ">
-                  <img [src]="data.foto" class="card-img-top" alt="...">
+                  <img [src]="data.foto" loading="lazy" class="card-img-top" alt="...">
                   <div class="overlay">
                     <pre style="display: none;">{{ data.tempat }}</pre>
                     <div class="text" style="white-space: pre-wrap">{{data.tempat}}</div>
@@ -122,7 +122,7 @@
           </div>
           <div class="col" *ngFor ="let vdo of videos " >
             <div class="card " >
-              <video   loop muted autoplay oncanplay="this.play()" onloadedmetadata="this.muted = true" class="card-img-top video-dokumentasi" >
+              <video loop muted autoplay oncanplay="this.play()" onloadedmetadata="this.muted = true" loading="lazy" class="card-img-top video-dokumentasi" >
                 <source [src]="vdo" type="video/mp4">
               Your browser does not support the video tag.
               </video>
@@ -132,51 +132,6 @@
       </div>
     </mat-expansion-panel>
   </div>
-
-  <!-- <div class="row" > -->
-    <!-- <div class="col-4 keterangan">
-        Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.
-    </div>
-    <div class="col-8">
-      <ngb-carousel >
-      <ng-template ngbSlide *ngFor ="let img of images" >
-        <div class="picsum-img-wrapper">
-          <div class="row row-cols-1 row-cols-md-3 g-4">
-            <div class="col">
-              <div class="card " style=" text-align: center;">
-                  <div class="container-our">
-                    <img src="../../../assets/frame1.jpg" class="service-img" alt="...">
-                    <div class="overlay">
-                      <div class="text">Toko Bangunan</div>
-                    </div>
-                  </div>
-              </div>
-            </div>
-            <div class="col">
-              <div class="card " style="margin-bottom: 0px;">
-                <div class="container-our">
-                  <img src="../../../assets/frame1.jpg" class="service-img" alt="...">
-                  <div class="overlay">
-                    <div class="text">Sumur Bor</div>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div class="col">
-              <div class="card " style="margin-bottom: 0px;">
-                  <img src="../../../assets/frame1.jpg" class="service-img" alt="...">
-                  <div class="overlay">
-                    <div class="text">Dll</div>
-                  </div>
-              </div>
-            </div>
-          </div>
-        </div>  
-      </ng-template>
-    </ngb-carousel>
-    
-    <hr />
-  </div> -->
 </div>
 
 
